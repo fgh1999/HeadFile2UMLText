@@ -1,0 +1,33 @@
+class Student: public User
+VAR：
+# iNumber:int
+# fChinese:float
+# fMath:float
+# fEnglish:float
+# fAverage:float
+# iRank:int
+# pNext:Student *
+FUNC:
++ Student():
++ Student(acName:std::string &, iNumber:int, chinese:float, math:float, english:float):
++ Student(student:const Student&):
++ ~Student()override:
++ get_name()const override:std::string
++ set_name(acName:std::string)override:void
++ get_pNext()const:virtual Student *
++ set_pNext(pnext:Student*):virtual void
++ get_fChinese()const:float
++ get_fEnglish()const:float
++ get_fMath()const:float
++ get_fAverage()const:float
++ update_fAverage():float
++ get_iRank()const:int
++ get_iNumber()const:int
++ set_fChinese(new_score:float):void
++ set_fEnglish(new_score:float):void
++ set_fMath(new_score:float):void
++ set_iNumber(new_num:int):void
++ set_iRank(new_rank:int):void
++ show()const override:void
++ _show_rank()const:void
+- cal_average()const:double
